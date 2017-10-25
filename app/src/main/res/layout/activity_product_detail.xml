@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.courier.ProductDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_detail_actionbar"
+        style="@style/CustomActionBar">
+
+        <TextView
+            android:id="@+id/activity_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/product_detail"
+            style="@style/BoldBlack"/>
+
+        <ImageButton
+            android:id="@+id/activity_detail_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    
+    <ImageView
+        android:id="@+id/activity_detail_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginRight="@dimen/margin_big"
+        android:src="@drawable/ic_shopping_cart_black_48px"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/activity_detail_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bud Light 355ml"
+            style="@style/BoldBlackBig"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginLeft="@dimen/margin_normal"/>
+
+        <TextView
+            android:id="@+id/activity_detail_details"
+            android:layout_below="@id/activity_detail_header"
+            android:layout_alignLeft="@id/activity_detail_header"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$2,99 - Retornavel - 12 pack"
+            style="@style/TextDefaultBold"/>
+
+        <View
+            android:id="@+id/activity_detail_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/activity_detail_details"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_alignLeft="@id/activity_detail_details"
+            android:background="@color/colorGrayBackground"/>
+
+        <TextView
+            android:id="@+id/activity_detail_text"
+            android:layout_below="@id/activity_detail_divider"
+            android:layout_alignLeft="@id/activity_detail_divider"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            style="@style/BoldBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_below="@id/activity_detail_text"
+            android:layout_alignLeft="@id/activity_detail_text"
+            android:textColor="@color/colorGrayText"
+            android:text="@string/lorem_ipsum"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

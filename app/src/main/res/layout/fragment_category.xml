@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.courier.CategoryFragment">
+
+    <TextView
+        android:id="@+id/fragment_cat_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/hey_david"
+        style="@style/BoldBlackBig"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginLeft="@dimen/margin_small"/>
+
+    <TextView
+        android:id="@+id/fragment_cat_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:text="@string/two_line"
+        style="@style/TextDefaultMedium"
+        android:layout_below="@id/fragment_cat_header"
+        android:layout_alignLeft="@id/fragment_cat_header"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_cat_recycler_view"
+        android:layout_below="@id/fragment_cat_text_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.courier.HomeActivity"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/activity_home_actionbar"
+        android:layout_alignParentTop="true"
+        style="@style/CustomActionBar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/activity_home_actionbar"
+        android:layout_alignBottom="@id/activity_home_actionbar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/delivery_address"
+        android:gravity="center"
+        android:lines="1"
+        style="@style/BoldBlack"/>
+
+    <ProgressBar
+        android:id="@+id/activity_home_horizontal_pb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_home_actionbar"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+    <TextView
+        android:id="@+id/activity_home_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_home_actionbar"
+        android:text="@string/where_r_u"
+        style="@style/BoldBlackBig"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginLeft="@dimen/margin_normal"/>
+
+    <TextView
+        android:id="@+id/activity_home_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:text="@string/address_explanation"
+        style="@style/TextDefaultMedium"
+        android:layout_below="@id/activity_home_header"
+        android:layout_alignLeft="@id/activity_home_header"
+        />
+
+    <EditText
+        android:id="@+id/activity_home_address_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_place_black_24px"
+        android:layout_below="@id/activity_home_text_content"
+        android:layout_alignLeft="@id/activity_home_text_content"
+        style="@style/AddressEditText"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_marginBottom="@dimen/margin_normal"/>
+
+    <ImageButton
+        android:id="@+id/activity_home_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/activity_home_address_input"
+        android:layout_alignTop="@+id/activity_home_address_input"
+        android:layout_alignBottom="@id/activity_home_address_input"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_cancel_gray_24px"
+        android:paddingRight="@dimen/margin_normal"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/activity_home_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/activity_home_cancel_btn"
+        android:layout_alignTop="@+id/activity_home_address_input"
+        android:layout_alignBottom="@id/activity_home_address_input"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/activity_home_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@id/activity_home_address_input"
+        android:background="@color/colorGrayBackground"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_home_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/activity_home_divider"
+        android:layout_alignParentBottom="true" />
+
+
+
+</RelativeLayout>

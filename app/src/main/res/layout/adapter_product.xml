@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:background="@drawable/surface_background">
+
+    <ImageView
+        android:id="@+id/adapter_prod_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_big"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_shopping_cart_black_48px"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/adapter_prod_price"
+        android:layout_below="@id/adapter_prod_image"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        style="@style/BoldBlackMedium"
+        android:text="$3.20"/>
+
+    <TextView
+        android:id="@+id/adapter_prod_desc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_below="@id/adapter_prod_price"
+        style="@style/TextDefaultBold"
+        android:text="Bud Light 355ml"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

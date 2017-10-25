@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Courier</string>
+    <string name="delivery_address">Delivery address</string>
+    <string name="where_r_u">Where are you?</string>
+    <string name="address_explanation">I will use your address to find the fastest delivery option available in your area.</string>
+    <string name="hey_david">Hey David</string> <!-- not sure what text to put in these places -->
+    <string name="two_line">A beautiful two line copy that should help Bob set the voice and tone of every screen.</string>
+    <string name="no_products_of_category">Desculpe, sem produtos para essa categoria</string>
+    <string name="default_err_mssg">Ops ocorreu um erro. Tente novamente em instantes.</string>
+    <string name="description">Description</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="product_detail">Product Detail</string>
+</resources>
